@@ -1,8 +1,14 @@
+/*
+This is your main.js/index.js.
+Make sure when running npm init make sure the entry point is set to app.js
+You can also name this file to your likings
+*/
+
+//the prefix and token and any other variables you want to add will be help in this main config.json
 const config = require("./config.json");
-const token = require("./token.json");
 const Discord = require("discord.js");
 const fs = require("fs");
-const bot = new Discord.Client({disableEveryone: true});
+//const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
 
 fs.readdir("./commands/", (err, files) => {
@@ -11,7 +17,7 @@ fs.readdir("./commands/", (err, files) => {
 
   let jsfile = files.filter(f => f.split(".").pop() === "js")
   if(jsfile.length <= 0){
-    console.log("Couldn't find commands.");
+    console.log("Command Deprecated");
     return;
   }
 
@@ -22,22 +28,9 @@ fs.readdir("./commands/", (err, files) => {
   });
 
 });
-//Add Role And Welcome New Member
-/*
-bot.on('guildMemberAdd', member => {
-  console.log('User' + member.user.tag + 'has joined the server!');
 
-  var role = member.guild.roles.find('name', 'Member');
-
-
-  setTimeout(function(){
-  member.addRole(role);
-}, 10000);
-});
-*/
-//Playing Message
 bot.on("ready", async () => {
-  console.log(`${bot.user.username} is online on ${bot.guilds.cache.size} servers!`);
+  console.log(`${bot.user.username} is online`);
 });
 
 //Command Manager
@@ -55,7 +48,7 @@ bot.on("message", async message => {
   
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
   if(commandfile) commandfile.run(bot,message,args);
-
+  
 });
 //Token need in token.json
 bot.login(token.token);
