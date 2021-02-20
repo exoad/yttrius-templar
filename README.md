@@ -1,7 +1,8 @@
 # discordbot-template
 [![Exoad's Den](https://img.shields.io/discord/792194075599568926.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/akrWKWeN)
 
-A Yttrius architecture discord bot using NodeJS with NPM => Discord.JS
+A basic architecture for a discord bot using NodeJS with NPM => Discord.JS
+(By basic I mean there is no events handler)
 # Requirements for Stable Usage & Things you should keep in mind(not really required)
 1. Some knowledge of the JavaScript Language and how to use NPM
 2. A hosting platform to keep your bot online 
