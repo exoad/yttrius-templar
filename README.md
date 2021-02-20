@@ -24,7 +24,7 @@ Examples:
 5. And follow the normal steps to get a bot into a server
 6. Import the code/Unzip the code into your IDE
 7. Place your token into the file called `config.json`
-![alt text](https://ibb.co/VqzYmK5)
+[![Screenshot-2021-02-19-7-17-25-PM.png](https://i.postimg.cc/0NpSR4QC/Screenshot-2021-02-19-7-17-25-PM.png)](https://postimg.cc/sBgx5w5B)
 8. In your console/terminal type `npm discord.js`
 9. Then after discord.js is done installing, use the following command to get your bot running `node .`
 10. If you did the steps correctly the console should have things saying a command is loaded, if not look over your work, if you need more help feel free to drop a question on my discord below
