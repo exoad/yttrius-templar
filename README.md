@@ -1,4 +1,4 @@
-# Discord Bot template[![Exoad's Den](https://img.shields.io/discord/792194075599568926.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/akrWKWeN)
+# Discord Bot template[![Exoad's Den] (https://img.shields.io/discord/792194075599568926.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/akrWKWeN)
 
 
 A basic architecture for a discord bot using NodeJS with NPM => Discord.JS
